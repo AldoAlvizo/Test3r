@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Set Temp</title>
+    <link rel="stylesheet" href="css/StyleSheet.css"/>
+</head>
+<body>
+    <div class="box">
+    <div class="slider">
+        <input type="range" min="10" max="27" value="15">
+
+    </div>
+       <div class="value">27</div>
+    </div>
+    <script>
+        const slider = document.querySelector("input");
+        const value = document.querySelector(".value");
+        value.textContent = slider.value;
+        slider.oninput = function(){
+            value.textContent = this.value;
+
+        }
+    </script>
+</body>
+</html>
